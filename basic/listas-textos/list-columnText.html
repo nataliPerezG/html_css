@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../Assets/_fonts.css">
+  <link rel="stylesheet" href="listColumn.css">
+  <title>Listas y Texto en columnas</title>
+</head>
+
+<body>
+
+  <main>
+    <h2>Listas</h2>
+    <ul class="week outside">
+      <li>lunes</li>
+      <li>Martes</li>
+      <li>Miércoles</li>
+      <li>Jueves</li>
+      <li>Viernes</li>
+      <li>Sábado</li>
+      <li>Domingo</li>
+    </ul>
+
+    <ul class="inside">
+      <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat autem consectetur, provident asperiores
+        rerum cupiditate alias facere harum nisi temporibus reiciendis similique rem</li>
+      <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat autem consectetur, provident asperiores
+        rerum cupiditate alias facere harum nisi temporibus reiciendis similique rem</li>
+      <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat autem consectetur, provident asperiores
+        rerum cupiditate alias facere harum nisi temporibus reiciendis similique rem</li>
+      <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat autem consectetur, provident asperiores
+        rerum cupiditate alias facere harum nisi temporibus reiciendis similique rem</li>
+    </ul>
+
+    <ol class="compras" start="5">
+      <li>Arroz</li>
+      <li>Azúcar</li>
+      <li>Leche</li>
+      <li>Huevos</li>
+      <li>Café</li>
+    </ol>
+    <p>Se pueden utilizar imágenes como viñenas pero tienen que tener un tamaño pequeño específico.
+      <br>
+      Como una alternativa, se puede utilizar ::before con un background:
+    </p>
+    <ul class="img">
+      <li>Comer</li>
+      <li>Dormir</li>
+      <li>Pasear</li>
+      <li>Leer</li>
+      <li>Escribir</li>
+    </ul>
+    <h2>Texto en Columnas:</h2>
+    <p>Se puede usar con listas o con párrafos:</p>
+    <ol class="list-columns">
+      <li>enero</li>
+      <li>febro</li>
+      <li>marzo</li>
+      <li>abril</li>
+      <li>mayo</li>
+      <li>junio</li>
+      <li>julio</li>
+      <li>agosto</li>
+      <li>septiembre</li>
+      <li>octubre</li>
+      <li>noviembre</li>
+      <li>diciembre</li>
+    </ol>
+    <article class="paragraph-columns">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore facere quaerat hic numquam facilis quasi
+        exercitationem esse a illo dolores mollitia veniam accusantium voluptates ipsam molestias, consequuntur in ipsum
+        reiciendis!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore facere quaerat hic numquam facilis quasi
+        exercitationem esse a illo dolores mollitia veniam accusantium voluptates ipsam molestias, consequuntur in ipsum
+        reiciendis!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore facere quaerat hic numquam facilis quasi
+        exercitationem esse a illo dolores mollitia veniam accusantium voluptates ipsam molestias, consequuntur in ipsum
+        reiciendis!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore facere quaerat hic numquam facilis quasi
+        exercitationem esse a illo dolores mollitia veniam accusantium voluptates ipsam molestias, consequuntur in ipsum
+        reiciendis!</p>
+    </article>
+    <article class="fuentes">
+
+      <h4 id="fuentes">FUENTES</h4>
+
+      <p>
+        Adicional a lo que conoces:
+      <ul>
+        <li>"font-variant: small-caps": capitaliza el texto escrito en minúsculas.</li>
+        <li>"line-height" asigna la altura de línea, es decir, el valor del interlineado.</li>
+        <li>Font-display: si tenemos una fuente personalizada, la propiedad font-display le indica al navegador cómo
+          cargar el texto mientras la fuente personalizada carga.
+          <ul> Valores:
+            <li>Block: oculta el texto hasta que la fuente se descarge.</li>
+            <li>Swap: utiliza una fuente por defecto hasta que la fuente cargue. </li>
+          </ul>
+        </li>
+        <li>text-indent: proporciona sangría a la primera línea del párrafo.</li>
+        <li> text-overflow: define cómo se manejará el texto cuando excede al contenedor. Su valor puede ser o
+          ellipsis(pone ...) PERO para que funcione, el contenedor debe tener asignado "overflow:hidden",
+          "white-space:nowrap". El texto quedaría así:</li>
+        <div class="cont-overflow">
+          <p class="text-overflow">Había una vez un barco pequeñito que no podía navegar</p>
+        </div>
+      </ul>
+      </p>
+      <br>
+      <a href="cssDos.html#content">⏫ </a>
+      <br>
+
+    </article>
+  </main>
+
+</body>
+
+</html>

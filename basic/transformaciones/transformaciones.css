@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+main {
+  width: 70dvw;
+  margin: 1rem auto;
+  padding: 1rem;
+  background-color: rgb(237, 238, 208);
+  text-align: center;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  margin: 2rem auto;
+  border: 3px solid purple;
+  background-color: rgb(209, 203, 149);
+}
+
+.box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 90% 0;
+  filter: opacity(.8);
+}
+
+/*Los valores de las traslaciones pueden ser en px, em, rem, porcentaje*/
+
+
+.traslacion img {
+  transition: transform 1.5s ease;
+}
+
+.traslacion img:hover {
+  /* transform: translateX(50%);
+  transform: translateY(50%); */
+  transform: translate(50%, 50%);
+}
+
+.rotation img {
+  transition: transform 1.5s ease;
+}
+
+.rotation img:hover {
+  /* transform: rotateX(45deg);
+  transform: rotatey(80deg);
+  transform: rotate(40deg, 60deg);
+  transform: rotateZ(-50deg); */
+  transform: rotate(180deg);
+  /*igual que rotateZ()*/
+}
+
+.scale img {
+  transition: transform 1.5s ease;
+}
+
+.scale img:hover {
+  /* transform: scaleX(2);*/
+  /*El doble*/
+  /* transform: scaleY(1.5);
+  transform: scale(1.5, 2); */
+  transform: scale(-1, -1);
+}
+
+.skew img {
+  transition: transform 1.5s ease;
+}
+
+.skew img:hover {
+  transform: skew(60deg, 20deg);
+}
+
+.multiple2d img {
+  transition: transform 1s ease;
+}
+
+.multiple2d img:hover {
+  transform:
+    translate(20%, 30%) rotate(45deg) skew(20deg, 50deg) scale(-1);
+}
+
+.traslacionZ img {
+  transition: transform 1s ease;
+}
+
+.traslacionZ img:hover {
+  transform: perspective(10rem) translateZ(3rem)
+    /*Se debe aplicar la perspectiva a la img antes de la transformación, o aplicarla al elemento padre, en este caso sería aplicarla sobre el div que contiene la img*/
+}
+
+.traslacionZneg img {
+  transition: transform 1s ease;
+}
+
+.traslacionZneg img:hover {
+  transform: perspective(10rem) translateZ(-3rem)
+}
+
+.rotacionx img {
+  transition: transform 1s ease;
+}
+
+.rotacionx img:hover {
+  transform: perspective(10rem) rotateX(85deg);
+}
+
+.rotaciony img {
+  transition: transform 1s ease;
+}
+
+.rotaciony img:hover {
+  transform: perspective(10rem) rotateY(85deg);
+}
+
+.multiple3d img {
+  transition: transform 1s ease;
+}
+
+.multiple3d img:hover {
+  transform: perspective(10rem) translate3d(2rem, 1rem, 2rem) rotateY(45deg) scale3d(1, 2, 1);
+}
+
+.origen img {
+  transition: transform 1s ease;
+  transform-origin: 0 0;
+}
+
+.origen img:hover {
+  transform: rotate(360deg);
+}
+
+.origen1 img {
+  transition: transform 1s ease;
+  transform-origin: 10%;
+}
+
+.origen1 img:hover {
+  transform: rotate(400deg);
+}
+
+.origen2 img {
+  transition: transform 1s ease;
+  transform-origin: 80% 60%;
+}
+
+.origen2 img:hover {
+  transform: translate(100px, 70px);
+}
+
+.origen3 img {
+  transition: transform 1s ease;
+  transform-origin: 9rem 9rem;
+}
+
+.origen3 img:hover {
+  transform: scale(2);
+}

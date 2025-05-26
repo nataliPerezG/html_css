@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="images.css">
+  <title>Imágenes</title>
+</head>
+
+<body>
+
+  <main>
+
+    <h2>Imagen según la resolución del dispositivo</h2>
+
+    <div class="target">
+      <picture>
+        <source media="(max-width:300px)" srcset="../../../../assets/img/7.jpg">
+        <source media="(max-width:400px)" srcset="../../../../assets/img/fondo.jpg">
+        <img src="../../../../assets/img/grieta.png" alt="">
+      </picture>
+    </div>
+
+    <h2>Imágenes</h2>
+    <p>Si queremos una imagen adaptable basta con usar width:100% y height: auto:</p>
+
+    <div class="flexible">
+      <img src="../../../../assets/img/ciudad de fiesta.jpg" alt="Ciudad">
+    </div>
+
+    <p>Si se quiere una imagen con una dimensión y posición fija se debe usar object fit y object position:
+    </p>
+
+    <div class="target contain">
+      <img src="https://www.shutterstock.com/image-vector/air-balloons-vector-3d-icon-260nw-2303650759.jpg"
+        alt="globos">
+      <p>Contain</p>
+      <p>La imagen se adapta según sus dimensiones.</p>
+    </div>
+
+    <div class="target cover">
+      <img src="https://www.shutterstock.com/image-vector/air-balloons-vector-3d-icon-260nw-2303650759.jpg"
+        alt="globos">
+      <p>Cover</p>
+      <p>La imagen se adapta para cubrir el contenedor</p>
+    </div>
+
+    <div class="target fill">
+      <img src="https://www.shutterstock.com/image-vector/air-balloons-vector-3d-icon-260nw-2303650759.jpg"
+        alt="globos">
+      <p>fill</p>
+      <p>La imagen rellena el contenedor.</p>
+    </div>
+
+    <div class="target none">
+      <img src="https://www.shutterstock.com/image-vector/air-balloons-vector-3d-icon-260nw-2303650759.jpg"
+        alt="globos">
+      <p>None</p>
+      <p>La imagen guarda sus proporciones</p>
+    </div>
+
+    <p>La propiedad object position determinará la posición de la imagen dentro de su contenedor. Se le pueden pasar
+      como valores medidas o "top" "bottom" "left" "right" o "center".</p>
+
+    <h2>Mácaras</h2>
+
+    <p>Determinan el área visible de la imagen y la forma que puede tomar.
+      <br>
+      Se determina con la propiedad clip-path, a la que se le pueden pasar varias funciones como valor:
+    </p>
+
+    <div class="clip-path">
+      <img class="circle" src="../../../../assets/img/estaciones.webp" alt="Estaciones">
+      <p>Circle</p>
+    </div>
+
+    <div class="clip-path">
+      <img class="elipsis" src="../../../../assets/img/estaciones.webp" alt="Estaciones">
+      <p>Elipsis</p>
+    </div>
+
+    <div class="clip-path">
+      <img class="inset" src="../../../../assets/img/estaciones.webp" alt="Estaciones">
+      <p>Inset</p>
+    </div>
+
+    <div class="clip-path">
+      <img class="poligon" src="../../../../assets/img/estaciones.webp" alt="Estaciones">
+      <p>Poligon
+        <br>
+        Puedes utilizar la página <a href="https://bennettfeely.com/clippy/" target="_blank">Css clip-path Maker</a>
+        para
+        generar el valor de los nodos
+      </p>
+    </div>
+
+    <p>Imágenes con efecto overlay:</p>
+
+    <div class="cont">
+      <img src="../../../../assets/img/ciudad de fiesta.jpg" alt="">
+    </div>
+
+    <div class="cont">
+      <img src="../../../../assets/img/7.jpg" alt="">
+    </div>
+
+
+
+  </main>
+
+</body>
+
+</html>

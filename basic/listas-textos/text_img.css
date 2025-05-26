@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.7rem;
+  text-align: justify;
+}
+
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+main {
+  width: 80dvw;
+  margin: 10px auto;
+  padding: 2rem;
+  background-color: papayawhip;
+}
+
+.verano {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.shape1 {
+  margin: 2rem;
+  border-radius: 50%;
+  float: left;
+  shape-outside: circle();
+}
+
+.shape2 {
+  margin: 0 .5rem;
+  width: 150px;
+  height: 300px;
+  clip-path: ellipse(7rem 8rem at right);
+  float: right;
+  shape-outside: ellipse();
+  object-fit: cover;
+  object-position: 60% 20%;
+}
+
+.shape3 {
+  float: left;
+  margin: 1rem;
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  shape-outside: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  ;
+}

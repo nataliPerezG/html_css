@@ -1,0 +1,51 @@
+@import "./basicos.css";
+
+main {
+  width: 70dvw;
+  margin: 10dvh auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+.flip-card {
+  width: 250px;
+  height: 300px;
+  margin: 2rem auto;
+  position: relative;
+  cursor: pointer;
+  perspective: 10rem;
+  /*Para que funcione la rotación en 2d*/
+  transform-style: preserve-3d;
+  /*Para que los hijos también tengan perspectiva*/
+  transition: transform 1s ease;
+}
+
+.flip-card:hover {
+  transform: rotateY(180deg);
+}
+
+.flipface {
+  position: absolute;
+  width: 250px;
+  height: 300px;
+  backface-visibility: hidden;
+  /*Oculta la cara de atrás*/
+}
+
+.flipface img {
+  height: 300px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.back img {
+  object-position: 80%;
+}
+
+.front {
+  transform: rotateY(0deg);
+}
+
+.back {
+  transform: rotateY(180deg);
+}

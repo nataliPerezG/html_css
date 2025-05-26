@@ -1,0 +1,55 @@
+@import "./css/basicos.css";
+
+/* animation: 
+    name: nombre -- obligatorio: Cualquier nombre
+    duration: duración -- obligatorio: en s o ms
+    timing-function: modo de desplazamiento de la animacion. 
+    delay: tiempo de retraso antes de comenzar
+    iteration-count: cantidad de veces que se repite
+    direction: se explica por sí mismo
+    fill-mode: 
+    -forwards: al terminar la animacion conserva los estilos finales.
+    - backwards:empieza con los estilos iniciales definidos en la animación.
+    - both: enpieza con los estilos definidos en la animación y los conserva al terminarla.
+    play-state: runing-paused: empieza runing por defecto. Solo es útil si se manipula desde JavaScript.
+    */
+
+.contenedor {
+  width: 70%;
+  margin: 20dvh auto;
+  padding: 10px;
+  border-radius: 40px;
+  background-color: var(--bg-color);
+  text-align: center;
+}
+
+.card {
+  width: 70px;
+  height: 70px;
+  background-color: #999;
+  border: 3px solid #ccc;
+  border-radius: 50%;
+  animation-name: move;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 10;
+  animation-direction: alternate;
+}
+
+.contenedor:hover .card {
+  animation-play-state: paused;
+}
+
+@keyframes move {
+  from {
+    transform: translateX(0);
+    background-color: #444;
+  }
+
+  to {
+    transform: translateX(1010%);
+    background-color: transparent;
+  }
+}

@@ -1,0 +1,69 @@
+@import "../css/basicos.css";
+
+main {
+  width: 80dvw;
+  margin: 20dvh auto;
+  padding: 1rem;
+  background-color: var(--bg-color);
+  text-align: center;
+  font-size: .8rem;
+}
+
+.menu {
+  background-color: #9e9a9a;
+  border-radius: 1rem;
+  padding: .6rem;
+  position: relative;
+  width: 100%;
+  height: 7dvh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu input[type="radio"] {
+  display: none;
+}
+
+.menu label {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  width: calc(100%/4);
+  /*Calcula en ancho de cada input menos el padding del menu*/
+  height: 1rem;
+  cursor: pointer;
+}
+
+.menu label:hover {
+  color: white;
+}
+
+.menu input[type="radio"]:checked+label {
+  color: gainsboro;
+}
+
+.tab-bg-hover {
+  position: absolute;
+  width: calc(100% / 4);
+  height: 33px;
+  background-image: linear-gradient(90deg, rgb(121, 120, 101), rgb(9, 47, 74));
+  border-radius: .5rem;
+  transition: transform 400ms ease-in-out;
+}
+
+#tab1:checked~.tab-bg-hover {
+  transform: translateX(0);
+}
+
+#tab2:checked~.tab-bg-hover {
+  transform: translateX(100%);
+}
+
+#tab3:checked~.tab-bg-hover {
+  transform: translateX(200%);
+}
+
+#tab4:checked~.tab-bg-hover {
+  transform: translateX(285%);
+}

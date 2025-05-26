@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+main {
+  width: 85%;
+  margin: 5px auto;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 2rem auto;
+  color: purple;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+small {
+  margin-top: 2rem;
+  font-size: .7rem;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card {
+  width: 300px;
+  height: 400px;
+  margin: 5px auto;
+  border: 2px solid purple;
+  border-radius: 10px;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.blur .card {
+  filter: blur(.2rem);
+}
+
+.brillo .card {
+  filter: brightness(.5);
+}
+
+.grayscale .card {
+  filter: grayscale();
+}
+
+.hue .card {
+  filter: hue-rotate(180deg);
+}
+
+.invert .card {
+  filter: invert();
+}
+
+.opacity .card {
+  filter: opacity(.5)
+}
+
+.saturate .card {
+  filter: saturate(1.5)
+}
+
+.sepia .card {
+  filter: sepia(2)
+}
+
+.drop-shadow .card {
+  filter: drop-shadow(2px 2px 5px red);
+}
+
+.blend .card {
+  position: relative;
+}
+
+
+
+.absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+.blend .card img {
+  /* mix-blend-mode: color;
+  mix-blend-mode: color-burn;
+  mix-blend-mode: color-dodge;
+  mix-blend-mode: darken;
+  mix-blend-mode: difference;
+  mix-blend-mode: exclusion;
+  mix-blend-mode: hard-light;
+  mix-blend-mode: hue;
+  mix-blend-mode: lighten;
+  mix-blend-mode: luminosity;
+  mix-blend-mode: multiply;
+  mix-blend-mode: overlay;
+  mix-blend-mode: saturation;
+  mix-blend-mode: screen;
+  mix-blend-mode: soft-light; */
+  mix-blend-mode: darken;
+}

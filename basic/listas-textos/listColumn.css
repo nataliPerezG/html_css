@@ -1,0 +1,75 @@
+main {
+  width: 80%;
+  margin: 10px auto;
+  background-color: antiquewhite;
+  padding: 5px;
+}
+
+.week {
+
+  list-style-type: armenian;
+  list-style-position: outside;
+}
+
+.outside li {
+  background-color: aliceblue;
+}
+
+.inside li {
+  background-color: aliceblue;
+  list-style-type: square;
+  list-style-position: inside;
+}
+
+.compras {
+  list-style-type: decimal-leading-zero;
+}
+
+.img {
+  list-style-type: none;
+}
+
+.img li::before {
+  content: "";
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background-image: url(../Assets/img/invierno1.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 90% center;
+  border-radius: 50%;
+}
+
+.list-columns {
+  list-style-position: inside;
+  columns: 4;
+  column-gap: .1rem;
+  column-rule: 4px solid greenyellow;
+  column-width: 100px;
+}
+
+.paragraph-columns {
+  columns: 3;
+  column-gap: 2rem;
+  text-align: justify;
+  column-width: 100px;
+}
+
+.cont-overflow {
+  width: 220px;
+  height: 60px;
+  background-color: var(--color);
+  color: rgb(201, 125, 25);
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 5px;
+
+}
+
+.text-overflow {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

@@ -1,0 +1,14 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border;
+  font-family: Abel;
+  font-size: 16px;
+  --backgroun-color: rgb(20, 45, 73);
+  --color: rgb(196, 191, 191);
+  --border-color: rgb(116, 114, 114);
+  background-color: var(--backgroun-color);
+  color: var(--color);
+  scroll-behavior: smooth;
+}

@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+main {
+  width: 90dvw;
+  height: 100dvh;
+  /*El contenedor de las tarjetas tiene que tener un alto definido*/
+  margin: 0 auto;
+  padding: 0, 1rem;
+  color: gainsboro;
+  overflow-y: scroll;
+  /*Debe estar definido con ese valor*/
+  scroll-snap-type: y mandatory;
+  /* scroll-snap-type: Reibe dos parámetros:
+  [x|y|line(igual a x)|block(igual a y)|both(ambos)]
+  [mandatory|proximity]; */
+
+
+}
+
+section {
+  width: 100%;
+  height: 100dvh;
+  /*La altura de las tarjetas debe estar definida*/
+  background-color: rgb(10, 87, 74);
+  padding: 2rem;
+  font-size: 4dvw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: center;
+  /*obligatorio*/
+}
+
+section:nth-child(odd) {
+  background-color: rgb(40, 40, 58);
+}

@@ -1,0 +1,138 @@
+main {
+  width: 80dvw;
+  margin: 10px auto;
+  background-color: aliceblue;
+}
+
+.flexible {
+  width: 80%;
+  margin: 5px auto;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.target {
+  max-width: 400px;
+  height: 400px;
+  margin: 30px auto;
+  background-color: antiquewhite;
+  border: 2px solid salmon;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.target picture {
+  object-fit: contain;
+  object-position: center;
+}
+
+.target p {
+  margin: 0;
+  padding: 0;
+}
+
+.contain img {
+  height: 300px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.cover img {
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.fill img {
+  height: 300px;
+  object-fit: fill;
+  object-position: center;
+}
+
+.none img {
+  height: 300px;
+  object-fit: none;
+}
+
+.clip-path {
+  width: 400px;
+  height: 400px;
+  margin: 30px auto;
+  background-color: rgb(46, 111, 131);
+  border: 2px solid rgb(228, 223, 223);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.clip-path img {
+  height: 350px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.clip-path p {
+  color: gainsboro;
+  text-align: center;
+}
+
+.circle {
+  /*Medida del radio*/
+  clip-path: circle(6rem);
+  /*Posicionamiento*/
+  clip-path: circle(6rem at top);
+  clip-path: circle(6rem at top right);
+  clip-path: circle(6rem at 60%);
+  clip-path: circle(5rem at 50% 80%);
+}
+
+.elipsis {
+  /*Una medida en x y otra en y*/
+  clip-path: ellipse(4rem 6rem);
+  /*Aplican los mismos parámetros de posicionamiento*/
+  clip-path: ellipse(4rem 6rem at 80% 35%);
+  filter: blur(.2rem);
+}
+
+.inset {
+  /*le da padding a la imagen y un border radius; se puede aplicar un valor general de redondeado o valores específicos a los lados:*/
+  clip-path: inset(2rem round 1rem);
+  clip-path: inset(2rem round 1rem 5rem);
+}
+
+.clip-path .poligon {
+  height: 250px;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
+
+.cont {
+  position: relative;
+  width: 50%;
+  margin: 10px auto;
+}
+
+.cont img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.cont::before {
+  content: "";
+  position: absolute;
+  background-color: black;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transform: scale(0);
+  transition: transform .4s ease;
+}
+
+.cont:hover::before {
+  opacity: .7;
+  transform: scale(1) rotate(180deg);
+}

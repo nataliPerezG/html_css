@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  width: 100%;
+  background-color: gainsboro;
+  color: #132b35;
+}
+
+.progress {
+  height: 15px;
+  background-color: darkred;
+  border-start-end-radius: 5px;
+  border-end-end-radius: 5px;
+  position: fixed;
+  top: 2px;
+  animation: progress auto linear;
+  animation-timeline: scroll();
+}
+
+@keyframes progress {
+  0% {
+    width: 0;
+    opacity: 20%
+  }
+
+  50% {
+    background-color: purple;
+  }
+
+  75% {
+    background-color: blue;
+  }
+
+  100% {
+    width: 100%;
+    opacity: 90%;
+    background-color: darkgreen;
+  }
+}
+
+
+main {
+  width: 80%;
+  min-height: 100dvh;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: rgb(201, 212, 220);
+  line-height: 2;
+}
+
+.container {
+  width: 50%;
+  height: 30dvh;
+  overflow: auto;
+  padding: 20px;
+  background-color: rosybrown;
+  margin: 10px auto;
+  position: relative;
+}
+
+.progress-dos {
+  height: 10px;
+  background-color: darkred;
+  border-start-end-radius: 5px;
+  border-end-end-radius: 5px;
+  position: relative;
+  top: 0;
+  left: 0;
+  animation: progress auto linear;
+  animation-timeline: scroll(container block);
+}

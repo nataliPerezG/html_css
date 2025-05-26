@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+main {
+  width: 70dvw;
+  height: 70dvh;
+  margin: 1rem auto;
+  padding: 1rem;
+  background-color: rgb(162, 165, 170);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+main h1 {
+  margin: .5rem auto 5rem;
+}
+
+.gradient-text {
+  background-image: linear-gradient(45deg, gold, rgb(75, 9, 20));
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /*Se deben usar los prefijos del navegador porque aún no está soportado totalmente.*/
+}
+
+.titulo {
+  background-image: radial-gradient(circle 400px, rgb(0, 255, 106), rgb(255, 0, 255));
+}
