@@ -4,12 +4,77 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Englebert&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="stye.css">
   <title>Menu Responsive</title>
 </head>
 
 <body>
 
+  <nav>
+    <!-- Mobile -->
+    <div class="mobile">
+      <div class="header">
+        <div class="logo">Logo</div>
+
+        <div class="icon"><span class="material-symbols-outlined">
+            menu </span></div>
+      </div>
+
+      <div class="links">
+        <a href="#">About us</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+        <a href="#">Search</a>
+        <a href="#">Sign up</a>
+        <a href="#">Login</a>
+      </div>
+    </div>
+
+    <!-- Desktop -->
+    <div class="desktop">
+
+      <div class="logo">Logo</div>
+
+      <div class="primary">
+        <a href="#">About us</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <div class="secondary full">
+        <a href="#">Search</a>
+        <a href="#">Sign up</a>
+        <a href="#">Login</a>
+      </div>
+
+      <div class="secondary fit">
+        <a class="more" href="#">More</a>
+        <div class="menu-cont">
+          <a href="#">Search</a>
+          <a href="#">Sign up</a>
+          <a href="#">Login</a>
+        </div>
+      </div>
+
+
+    </div>
+
+
+  </nav>
+
+
+  <script>
+    let menu = document.querySelector(".icon")
+    let links = document.querySelector(".links")
+
+    menu.addEventListener("click", () => {
+      links.classList.toggle("collapsed")
+    })
+  </script>
 </body>
 
 </html>
