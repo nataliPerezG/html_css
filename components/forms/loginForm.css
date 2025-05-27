@@ -5,3 +5,188 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background-color: rgb(114, 62, 80);
+  height: 100dvh;
+  font-family: "WDXL Lubrifont TC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 80%;
+  height: 90%;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.form {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  padding: 7px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: thin solid #555;
+  border-radius: 8px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  outline: .5px solid rgb(114, 62, 80);
+}
+
+.options {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 200;
+}
+
+.check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.check label:hover,
+.check input:hover {
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  width: 18px;
+  height: 22px;
+  border-color: rgb(114, 62, 80);
+}
+
+.options a {
+  color: rgb(114, 62, 80);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.options a:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  width: 100%;
+  padding: 9px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-login {
+  margin: 10px auto;
+  background-color: rgb(110, 42, 66);
+  color: white;
+}
+
+.btn-login:hover {
+  background-color: rgb(114, 62, 80);
+}
+
+.providers {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.btn-google {
+  background-color: rgb(236, 238, 240);
+  color: #222;
+  font-weight: 800;
+}
+
+.btn-google:hover {
+  background-color: #e9e6e6;
+}
+
+.btn-facebook {
+  background-color: rgb(37, 37, 90);
+  color: white;
+}
+
+.btn-facebook:hover {
+  background-color: rgb(30, 30, 66);
+}
+
+.btn-github {
+  background-color: black;
+  color: white;
+}
+
+.btn-github:hover {
+  background-color: #222;
+}
+
+.image {
+  width: 50%;
+  height: 100%;
+  background-color: rgba(114, 62, 80, 0.253);
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8ENerqi5FjuBuS7pb5mnuLnzXjrkYLsiEew&s");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (max-width:1100px) {
+  .container {
+    width: 95%;
+  }
+
+  .form {
+    width: 420px;
+    margin: 0 auto;
+  }
+
+  .image {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width:800px) {
+  .image {
+    display: none
+  }
+
+  .container {
+    height: 90dvh;
+  }
+
+  .form {
+    width: 75dvw;
+    height: 80dvh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+}
