@@ -16,23 +16,29 @@
 
 table {
   margin: 10px auto;
-  border: 2px solid rgb(23, 29, 39);
+  border-spacing: 0;
   border-collapse: collapse;
   padding: 5px 10px;
   color: #bbb;
 }
 
-thead th {
-  border: 2.5px solid #bbb;
+caption {
+  color: #333;
+}
+
+th {
+  border: 2px solid #bbb;
   border-collapse: collapse;
-  background-color: rgb(46, 45, 65);
+  background-color: rgb(56, 55, 71);
   padding: 5px 10px;
+  position: sticky;
+  top: 3px;
 }
 
 td {
   border: 2.2px solid rgb(34, 41, 53);
-  min-width: 100px;
-  height: 30px;
+  min-width: 120px;
+  height: 40px;
   padding: 5px 10px;
   text-align: center;
 }
@@ -42,21 +48,11 @@ tbody tr:nth-child(odd) {
   color: #333;
 }
 
-tbody tr:nth-child(odd):hover {
-  background-color: #4d5168;
-  color: #ddd;
-}
-
 tbody tr:nth-child(even) {
-  background-color: rgb(46, 74, 85);
+  background-color: rgb(101, 125, 134);
 }
 
-tbody tr:nth-child(even):hover {
-  background-color: rgb(81, 112, 133);
-  color: #ddd;
-}
-
-tfoot tr {
+tbody tr:hover {
+  background-color: #c5d6dd;
   color: #333;
-  background-color: #bbb;
 }
