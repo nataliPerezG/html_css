@@ -22,23 +22,27 @@
 }
 
 .contCheck {
-  width: 300px;
-  height: 300px;
+  width: 150px;
+  height: 60px;
   padding: 20px;
   background-color: #ddd;
   position: relative;
+  margin: 10px;
 }
 
-.check {
+.check,
+.radio {
   margin-left: 22px;
 }
 
-input[type="checkbox"] {
+input[type="checkbox"],
+input[type="radio"] {
   width: 0;
   height: 0;
 }
 
-.outerCheck {
+.outerCheck,
+.outerRadio {
   width: 22px;
   height: 22px;
   border: 1.3px solid #888;
@@ -70,4 +74,26 @@ input[type="checkbox"] {
 input:checked~.outerCheck .cont-check {
   transform: scale(1);
   transition: all .3s ease;
+}
+
+/* ------------ */
+
+.outerRadio {
+  border-radius: 50%;
+}
+
+.radioIcon {
+  background-color: darkred;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transform: scale(0);
+  transition: all .3s ease;
+}
+
+input[type="radio"]:checked~.outerRadio .radioIcon {
+  transform: scale(1);
 }
