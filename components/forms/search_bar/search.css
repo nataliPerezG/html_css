@@ -1,0 +1,62 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+}
+
+.container {
+  width: 70%;
+  margin: 100px auto;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+}
+
+input {
+  padding: 8px;
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 1.3rem;
+  color: darkgreen;
+}
+
+.container:focus-within {
+  box-shadow: 0 0 8px 1px #88888863;
+  border: 1px solid rgba(89, 228, 9, 0.671);
+}
+
+.options {
+  margin-right: 10px;
+}
+
+button {
+  border: none;
+  background-color: white;
+  font-size: 1.4rem;
+  transition: color .2s ease-in-out;
+}
+
+button:hover {
+  cursor: pointer;
+  color: darkgreen;
+}
