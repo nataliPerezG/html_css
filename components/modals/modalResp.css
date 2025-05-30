@@ -13,11 +13,80 @@
   align-items: center;
 }
 
-
 .modalCont {
-  width: 40%;
+  width: 50%;
   background-color: #eee;
   padding: 20px;
   display: flex;
   flex-direction: column;
+  gap: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 3px #666;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 5px
+}
+
+.title span {
+  font-size: 2rem;
+  color: darkred;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+p {
+  margin: 10px auto;
+  text-align: center;
+}
+
+.options {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+
+button {
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.save {
+  background-color: rgb(37, 75, 37);
+  border: 2px solid rgb(37, 75, 37);
+  color: #eee;
+}
+
+.save:hover {
+  background-color: rgb(53, 114, 53);
+  color: #eee;
+}
+
+.cancel {
+  border: 2px solid darkred;
+}
+
+.cancel:hover {
+  border: 2px solid rgb(71, 15, 15);
+  color: darkred;
+}
+
+@media screen and (max-width:400px) {
+  .options {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width:370px) {
+  .title {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
