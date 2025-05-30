@@ -3,3 +3,111 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  font-family: "Syne Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  background-color: steelblue;
+}
+
+main {
+  width: 50%;
+  min-height: 70dvh;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #eee;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-around;
+  gap: 20px;
+  text-align: center;
+}
+
+p {
+  color: #333333c2;
+  font-size: .9rem;
+}
+
+.drag {
+  border: 2px dashed #666;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.drag .material-symbols-outlined {
+  flex: 1;
+  color: rgba(0, 0, 255, 0.4);
+  font-size: 5rem;
+}
+
+.drag button {
+  width: 80%;
+  padding: 10px 20px;
+  margin: 15px auto;
+  border: 2px solid steelblue;
+  background-color: steelblue;
+  color: #444;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 3px #bbb;
+  cursor: pointer;
+}
+
+.drag button:hover {
+  background-color: rgb(106, 169, 221);
+}
+
+h3 {
+  text-align: left;
+  color: #444;
+}
+
+.files {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.file {
+  border: 1px solid #ccc;
+  padding: 10px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.infoDoc {
+  padding: 5px 10px;
+  flex: 1;
+  gap: 5px;
+  text-align: left;
+}
+
+.progress {
+  width: 100%;
+  height: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.full {
+  background-color: rgb(106, 169, 221);
+  width: 60%;
+  height: 5px;
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+.complete {
+  font-size: .5rem;
+  color: #444;
+}
+
+.iconClose button {
+  border: none;
+  cursor: pointer;
+}
