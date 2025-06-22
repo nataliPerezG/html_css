@@ -1,26 +1,87 @@
-< !DOCTYPE html>
-  <html lang="es">
+<!DOCTYPE html>
+<html lang="es">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <title>Tablas</title>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <title>Tablas</title>
+</head>
 
-  <body>
+<body>
 
-    <div class="container">
+  <div class="container">
+    <div class="row">
       <div class="col">
+
+        <div class="table-responsive">
+          <!-- La tabla dentro del div para solo hacer
+        scroll en ella -->
+          <table class="table table-striped table-borderless table-hover">
+            <caption>Personal activo</caption>
+            <thead class="table-success">
+              <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>País</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Pedro</td>
+                <td>34</td>
+                <td>España</td>
+              </tr>
+              <tr>
+                <td>Alejandro</td>
+                <td>29</td>
+                <td>México</td>
+              </tr>
+              <tr>
+                <td>Lucía</td>
+                <td>22</td>
+                <td>Portugal</td>
+              </tr>
+              <tr>
+                <td>Carlos</td>
+                <td>26</td>
+                <td class="table-danger">Perú</td>
+              </tr>
+              <tr>
+                <td>Pedro</td>
+                <td>34</td>
+                <td>España</td>
+              </tr>
+              <tr>
+                <td>Alejandro</td>
+                <td>29</td>
+                <td>México</td>
+              </tr>
+              <tr class="table-dark">
+                <td>Lucía</td>
+                <td>22</td>
+                <td>Portugal</td>
+              </tr>
+              <tr>
+                <td>Carlos</tdc>
+                <td>26</td>
+                <td>Perú</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
 
       </div>
     </div>
+  </div>
 
 
 
 
 
-    <script src="../js/bootstrap.bundle.min.js"></script>
-  </body>
+  <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
 
-  </html>
+</html>
