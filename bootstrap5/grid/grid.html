@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <title>Grid</title>
+
+  <style>
+    .row>div {
+      background-color: #dde;
+      padding: 5px;
+      margin: 5px 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <!-- Container: contenedor ppal donde irán todas las filas y columnas 
+    container: centra el contenido.
+    container-fluid: ocupa todo el viewport
+    -->
+
+    <div class="row">
+
+      <!-- Rows: grupos horizontales de columnas (filas) -->
+
+      <!-- Tamaños de columnas:
+    .col      extra pequeño   menor o igual a 576px	
+    .col-sm   pequeño     más de 576px y menos de 768px	
+    .col-md   mediano     más de 768px y menos de 992px	
+    .col-lg   largo       más de 992px y menos de 1200px	
+    .col-xl   extralargo  más de 1200px y menos de 1400px
+    .col-xxl  extra extra largo   más 1400px
+    -->
+
+      <div class="col-lg-4">
+        <h1>Trabajando en la Grid</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <button class="btn btn-primary">Más info</button>
+      </div>
+
+      <div class="col-lg-4">
+        <h1>Trabajando en la Grid</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <button class="btn btn-primary">Más info</button>
+      </div>
+
+      <div class="col-lg-4">
+        <h1>Trabajando en la Grid</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <button class="btn btn-primary">Más info</button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="container-fluid">
+
+    <div class="row">
+
+      <div class="col-4 col-lg-12">
+        <h1>Trabajando en la Grid</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <button class="btn btn-primary">Más info</button>
+      </div>
+
+      <div class="col-4">
+        <h1>Trabajando en la Grid</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <button class="btn btn-primary">Más info</button>
+      </div>
+
+      <div class="col-4">
+        <h1>Trabajando en la Grid</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <button class="btn btn-primary">Más info</button>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

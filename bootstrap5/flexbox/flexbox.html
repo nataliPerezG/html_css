@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <title>Bootstrap Flexbox</title>
+
+  <style>
+    div {
+      margin-bottom: 5px;
+    }
+
+    .contenedor {
+      background-color: #2971a1;
+      color: #eee;
+    }
+
+    .contenedor div {
+      background-color: #ffffff4f;
+      padding: 5px;
+      margin: 2px 0;
+      border: 1px solid #2971a1;
+      border-radius: 8px;
+    }
+
+    #vertical {
+      height: 100px;
+    }
+
+    #otro {
+      min-height: 100px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- Se establece qué tipo de elemento flexbox será (flex o inline flex)
+  y desde qué dispositivo:
+  
+  d-sm-flex (d-sm-inline-flex)
+  d-md-flex (d-sd-inline-flex)
+  d-lg-flex (d-lg-inline-flex)
+  d-xl-flex (d-xl-inline-flex)
+  d-xxl-flex (d-xxl-inline-flex)
+  
+  -->
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col">
+        <h4 class="mt-4">Tipos de display flex</h4>
+        <hr>
+        <div class="bg-primary text-white p-3 d-flex">
+          <p class="mb-0">Display flex: <strong>d-flex</strong></p>
+        </div>
+        <div class="bg-primary text-white p-3 d-inline-flex">
+          <p class="mb-0">Display Inline flex: <strong>d-inline-flex</strong></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <h4>Direction</h4>
+        <hr>
+
+        <!-- 
+  sm | md | lg | xl | xxl  
+  
+  .flex-*-row
+  .flex-*-row-reverse
+  .flex-*-column
+  .flex-*-column-reverse
+  
+  -->
+
+        <div class="contenedor d-flex flex-row">
+          <div>caja 1</div>
+          <div>caja 2</div>
+          <div>caja 3</div>
+        </div>
+
+        <div class="contenedor d-flex flex-row-reverse">
+          <div>caja 1</div>
+          <div>caja 2</div>
+          <div>caja 3</div>
+        </div>
+
+        <div class="contenedor d-flex flex-column">
+          <div>caja 1</div>
+          <div>caja 2</div>
+          <div>caja 3</div>
+        </div>
+
+        <div class="contenedor d-flex flex-column-reverse">
+          <div>caja 1</div>
+          <div>caja 2</div>
+          <div>caja 3</div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+
+        <!-- 
+          sm | md | lg | xl | xxl  
+  
+      .justify-content-*-start
+      .justify-content-*-end
+      .justify-content-*-center
+      .justify-content-*-around
+      .justify-content-*-between
+      .justify-content-*-evenly
+          -->
+
+        <h4>Justify content</h4>
+        <hr>
+        <p>Justify content start</p>
+        <div class="contenedor d-flex justify-content-start">
+          <div>caja 1</div>
+          <div>caja 2</div>
+          <div>caja 3</div>
+        </div>
+
+        <p>Justify content end</p>
+        <div class="contenedor d-flex justify-content-end">
+          <div>caja 1</div>
+          <div>caja 2</div>
+          <div>caja 3</div>
+        </div>
+
+        <p>Justify content center</p>
+        <div class="contenedor d-flex justify-content-center">
+          <div>caja 1</div>
+          <div>caja 2</div>
+          <div>caja 3</div>
+        </div>
+
+        <p>Justify content around</p>
+        <div class="contenedor d-flex justify-content-around">
+          <div>caja 1</div>
+          <div>caja 2</div>
+          <div>caja 3</div>
+        </div>
+
+        <p>Justify content between</p>
+        <div class="contenedor d-flex justify-content-between">
+          <div>caja 1</div>
+          <div>caja 2</div>
+          <div>caja 3</div>
+        </div>
+
+        <p>Justify content evenly</p>
+        <div class="contenedor d-flex justify-content-evenly">
+          <div>caja 1</div>
+          <div>caja 2</div>
+          <div>caja 3</div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="row">
+      <div class="column">
+
+        <h2>Align Items</h2>
+        <hr>
+        <p>Alineación vertical - fill</p>
+
+        <!-- 
+  sm | md | lg | xl | xxl
+  flex-*-fill
+  -->
+
+        <div id="vertical" class="contenedor d-flex align-items-start">
+          <div> Lorem ipsum dolor sit</div>
+          <div class="flex-fill"> flex fill</div>
+          <div class="flex-fill"> flex fill</div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="column">
+
+        <!-- 
+  sm | md | lg | xl | xxl
+  align-items-*-start
+  align-items-*-end
+  align-items-*-center
+  align-items-*-baseline
+  align-items-*-stretch
+    -->
+
+        <p>Align items start</p>
+        <div id="vertical" class="contenedor d-flex align-items-start">
+          <div>caja 1</div>
+          <div>caja 2</div>
+          <div>caja 3</div>
+        </div>
+
+        <p>Align items center</p>
+        <div id="vertical" class="contenedor d-flex align-items-center">
+          <div>caja 1</div>
+          <div>caja 2</div>
+          <div>caja 3</div>
+        </div>
+
+        <p>Align items end</p>
+        <div id="vertical" class="contenedor d-flex align-items-end">
+          <div>caja 1</div>
+          <div>caja 2</div>
+          <div>caja 3</div>
+        </div>
+
+        <p>Align items stretch</p>
+        <div id="vertical" class="contenedor d-flex align-items-stretch">
+          <div>caja 1</div>
+          <div>caja 2</div>
+          <div>caja 3</div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="my-5 row">
+      <div class="column">
+
+        <!-- 
+          sm | md | lg | xl | xxl
+          align-self-*-start
+          align-self-*-end
+          align-self-*-center
+          align-self-*-baseline
+          align-self-*-stretch
+            -->
+        <h4>Align items self</h4>
+        <hr>
+        <div id="vertical" class="contenedor d-flex align-items-start">
+          <div class="align-self-start">self start</div>
+          <div class="align-self-end">self end</div>
+          <div class="align-self-center">self center</div>
+          <div class="align-self-baseline">self baseline</div>
+          <div class="align-self-stretch">self stretch</div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <h4>Auto Margins</h4>
+        <hr>
+
+        <div id="vertical" class="contenedor d-flex justify-content-end">
+          <div class="me-auto">Margin End auto</div>
+          <div>caja 2</div>
+          <div>caja 3</div>
+        </div>
+
+        <div id="vertical" class="contenedor d-flex justify-content-start">
+          <div>caja 1</div>
+          <div>caja 2</div>
+          <div class="ms-auto">MarginStart auto</div>
+        </div>
+
+        <div id="vertical" class="contenedor d-flex flex-column align-items-start" style="height: 200px">
+          <div class="mb-auto">MarginBottom</div>
+          <div>caja 2</div>
+          <div>caja 3</div>
+        </div>
+
+        <div id="vertical" class="contenedor d-flex flex-column align-items-end" style="height: 200px">
+          <div>caja 1</div>
+          <div>caja 2</div>
+          <div class="mt-auto">MarginTop</div>
+        </div>
+
+
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container">
+
+    <div class="row">
+      <div class="column">
+
+        <!-- 
+    sm | md | lg | xl | xxl
+    flex-*-wrap
+    flex-*-nowrap
+    flex-*-wrap-reverse
+    -->
+        <h3>Wrap</h3>
+        <hr>
+        <p>No Wrap</p>
+        <div class="contenedor d-flex" id="otro">
+          <div>item 1</div>
+          <div>item 2</div>
+          <div>item 3</div>
+          <div>item 4</div>
+          <div>item 5</div>
+          <div>item 6</div>
+          <div>item 7</div>
+          <div>item 8</div>
+          <div>item 9</div>
+          <div>item 10</div>
+          <div>item 11</div>
+          <div>item 12</div>
+          <div>item 13</div>
+          <div>item 14</div>
+          <div>item 15</div>
+        </div>
+
+        <p>Wrap</p>
+        <div class="contenedor d-flex flex-wrap" id="otro">
+          <div>item 1</div>
+          <div>item 2</div>
+          <div>item 3</div>
+          <div>item 4</div>
+          <div>item 5</div>
+          <div>item 6</div>
+          <div>item 7</div>
+          <div>item 8</div>
+          <div>item 9</div>
+          <div>item 10</div>
+          <div>item 11</div>
+          <div>item 12</div>
+          <div>item 13</div>
+          <div>item 14</div>
+          <div>item 15</div>
+        </div>
+
+        <p>Wrap Reverse</p>
+        <div class="contenedor d-flex flex-wrap-reverse" id="otro">
+          <div>item 1</div>
+          <div>item 2</div>
+          <div>item 3</div>
+          <div>item 4</div>
+          <div>item 5</div>
+          <div>item 6</div>
+          <div>item 7</div>
+          <div>item 8</div>
+          <div>item 9</div>
+          <div>item 10</div>
+          <div>item 11</div>
+          <div>item 12</div>
+          <div>item 13</div>
+          <div>item 14</div>
+          <div>item 15</div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <h4>Order</h4>
+        <hr>
+        <div class="contenedor d-flex" id="otro">
+          <div class="order-1">item 1</div>
+          <div class="order-3">item 2</div>
+          <div class="order-2">item 3</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <h4>Align Content</h4>
+        <hr>
+        <p>Start</p>
+        <div style="height: 220px" class="contenedor d-flex flex-wrap align-items-start align-content-start">
+          <div>item 1</div>
+          <div>item 2</div>
+          <div>item 3</div>
+          <div>item 4</div>
+          <div>item 5</div>
+          <div>item 6</div>
+          <div>item 7</div>
+          <div>item 8</div>
+          <div>item 9</div>
+          <div>item 10</div>
+        </div>
+
+        <p>End</p>
+        <div style="height: 220px" class="contenedor d-flex flex-wrap align-items-start align-content-end">
+          <div>item 1</div>
+          <div>item 2</div>
+          <div>item 3</div>
+          <div>item 4</div>
+          <div>item 5</div>
+          <div>item 6</div>
+          <div>item 7</div>
+          <div>item 8</div>
+          <div>item 9</div>
+          <div>item 10</div>
+        </div>
+
+        <p>Center</p>
+        <div style="height: 220px" class="contenedor d-flex flex-wrap align-items-start align-content-center">
+          <div>item 1</div>
+          <div>item 2</div>
+          <div>item 3</div>
+          <div>item 4</div>
+          <div>item 5</div>
+          <div>item 6</div>
+          <div>item 7</div>
+          <div>item 8</div>
+          <div>item 9</div>
+          <div>item 10</div>
+        </div>
+
+        <p>Space Around</p>
+        <div style="height: 220px" class="contenedor d-flex flex-wrap align-items-start align-content-around">
+          <div>item 1</div>
+          <div>item 2</div>
+          <div>item 3</div>
+          <div>item 4</div>
+          <div>item 5</div>
+          <div>item 6</div>
+          <div>item 7</div>
+          <div>item 8</div>
+          <div>item 9</div>
+          <div>item 10</div>
+          <div>item 11</div>
+          <div>item 12</div>
+          <div>item 13</div>
+          <div>item 14</div>
+          <div>item 15</div>
+          <div>item 16</div>
+          <div>item 17</div>
+          <div>item 18</div>
+          <div>item 19</div>
+          <div>item 20</div>
+        </div>
+
+        <p>Space Between</p>
+        <div style="height: 220px" class="contenedor d-flex flex-wrap align-items-start align-content-between">
+          <div>item 1</div>
+          <div>item 2</div>
+          <div>item 3</div>
+          <div>item 4</div>
+          <div>item 5</div>
+          <div>item 6</div>
+          <div>item 7</div>
+          <div>item 8</div>
+          <div>item 9</div>
+          <div>item 10</div>
+          <div>item 11</div>
+          <div>item 12</div>
+          <div>item 13</div>
+          <div>item 14</div>
+          <div>item 15</div>
+          <div>item 16</div>
+          <div>item 17</div>
+          <div>item 18</div>
+          <div>item 19</div>
+          <div>item 20</div>
+        </div>
+
+        <p>Stretch</p>
+        <div style="height: 220px" class="contenedor d-flex flex-wrap align-content-stretch">
+          <div>item 1</div>
+          <div>item 2</div>
+          <div>item 3</div>
+          <div>item 4</div>
+          <div>item 5</div>
+          <div>item 6</div>
+          <div>item 7</div>
+          <div>item 8</div>
+          <div>item 9</div>
+          <div>item 10</div>
+          <div>item 11</div>
+          <div>item 12</div>
+          <div>item 13</div>
+          <div>item 14</div>
+          <div>item 15</div>
+          <div>item 16</div>
+          <div>item 17</div>
+          <div>item 18</div>
+          <div>item 19</div>
+          <div>item 20</div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <br><br><br>
+
+  <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
