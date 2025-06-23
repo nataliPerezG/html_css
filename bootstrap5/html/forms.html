@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <title>Formularios</title>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- Clases para input de texto -->
+
+    <div class="row my-4">
+
+      <h3>Clases para input text</h3>
+      <div class="col-12 col-md-6">
+        <form>
+          <div class="mb-3">
+            <label class="form-label" for="correo">Correo Electrónico</label>
+            <input type="email" class="form-control" id="correo" area-describedby="ayuda-correo">
+            <div id="ayuda-correo" class="form-text">
+              Te enviaremos un correo
+            </div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label" for="texto">Mensaje</label>
+            <textarea name="texto" class="form-control" id="texto"></textarea>
+          </div>
+          <button class="btn btn-success mb-4">Enviar</button>
+        </form>
+
+      </div>
+      <div class="col-12 col-md-6">
+        <form>
+          <div class="mb-3">
+            <input type="text" class="form-control form-control-lg" placeholder="Input grande">
+          </div>
+
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Input normal">
+          </div>
+
+          <div class="mb-3">
+            <input type="text" class="form-control form-control-sm" placeholder="Input pequeño">
+          </div>
+
+          <div class="mb-3">
+            <input type="text" class="form-control" disabled placeholder="Input desabilitado">
+          </div>
+
+          <div class="mb-3">
+            <input type="file" class="form-control">
+          </div>
+        </form>
+      </div>
+
+    </div>
+
+    <hr>
+    <h3>Formularios con Grid</h3>
+
+    <div class="row">
+      <!-- Distribución de inputs en la rejilla -->
+
+      <div class="col-12">
+
+        <form autocomplete="off">
+          <div class="row">
+            <div class="col-12 col-sm-6">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" id="nombre" class="form-control">
+            </div>
+            <div class="col-12 col-sm-6">
+              <label for="correo" class="form-label">Correo</label>
+              <input type="email" id="correo" class="form-control">
+            </div>
+          </div>
+
+          <div class="row mt-4">
+
+            <div class="col-12 col-md-6">
+              <label for="texto" class="form-label">Mensaje</label>
+              <textarea name="texto" id="texto" class="form-control"></textarea>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <div class="row mt-4">
+
+                <!-- clases para inputs radio, select options, checkbox -->
+
+                <div class="col-12 col-sm-6">
+                  <label class="form-label">Estado Civil</label>
+                  <div class="form-check">
+                    <input type="radio" name="e-civil" id="soltero" class="form-check-input">
+                    <label for="soltero" class="form-check-label">Soltero</label>
+                  </div>
+
+                  <div class="form-check">
+                    <input type="radio" name="e-civil" id="casado" class="form-check-input">
+                    <label for="casado" class="form-check-label">Casado</label>
+                  </div>
+
+                </div>
+
+                <div class="col-12 col-sm-6">
+                  <label class="form-label">País</label>
+                  <select class="form-select" name="pais" id="pais">
+                    <option class="" value="col">Colombia</option>
+                    <option value="mx">México</option>
+                    <option value="cr">Costa Rica</option>
+                    <option value="br">Brasil</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <hr class="mb-3">
+
+    <div class="row">
+      <h3 class="mb-4">Clases para Inputs checkbox</h3>
+
+      <div class="col-12 d-flex justify-content-center">
+        <div>
+          <div class="form-check mb-3">
+            <input type="checkbox" name="term" id="term" class="form-check-input">
+            <label class="form-check-label" for="term">Acepto los términos y condiciones</label>
+          </div>
+          <button class="btn btn-success col-12">Enviar</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <br><br><br><br><br>
+
+  <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
