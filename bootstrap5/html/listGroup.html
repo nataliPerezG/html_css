@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <title>List Group</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row mt-5">
+
+      <div class="col">
+        <h5>Lista normal</h5>
+        <ul class="list-group">
+          <li class="list-group-item active">item 1</li>
+          <li class="list-group-item">item 2</li>
+          <li class="list-group-item disabled">item 3</li>
+          <li class="list-group-item">item 4</li>
+          <li class="list-group-item">item 5</li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <h5>Lista con enlaces</h5>
+        <ul class="list-group">
+          <a href="#" class="list-group-item list-group-item-action active">Enalce 1</a>
+          <a href="#" class="list-group-item list-group-item-action">Enalce 2</a>
+          <a href="#" class="list-group-item list-group-item-action disabled">Enalce 3</a>
+          <a href="#" class="list-group-item list-group-item-action">Enalce 4</a>
+          <a href="#" class="list-group-item list-group-item-action">Enalce 5</a>
+        </ul>
+      </div>
+
+    </div>
+    <hr class="mb-4">
+
+    <div class="row mt-3">
+
+      <div class="col">
+        <h5>Lista sin borders</h5>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">item 1</li>
+          <li class="list-group-item">item 2</li>
+          <li class="list-group-item">item 3</li>
+          <li class="list-group-item">item 4</li>
+          <li class="list-group-item">item 5</li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <h5>Lista desordenanda numerada</h5>
+        <ul class="list-group list-group-numbered">
+          <li class="list-group-item">item 1</li>
+          <li class="list-group-item">item 2</li>
+          <li class="list-group-item">item 3</li>
+          <li class="list-group-item">item 4</li>
+          <li class="list-group-item">item 5</li>
+        </ul>
+      </div>
+
+    </div>
+    <hr class="mb-3">
+
+    <div class="row mt-3">
+
+      <div class="col">
+        <h5>Colores para los ítems de lista</h5>
+        <ul class="list-group">
+          <li class="list-group-item list-group-item-primary">item 1</li>
+          <li class="list-group-item list-group-item-success">item 2</li>
+          <li class="list-group-item list-group-item-warning">item 3</li>
+          <li class="list-group-item list-group-item-danger">item 4</li>
+          <li class="list-group-item list-group-item-secondary">item 5</li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <h5>Colores para los ítems de enlaces</h5>
+        <ul class="list-group">
+          <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Enlace 1</a>
+          <a href="#" class="list-group-item list-group-item-action list-group-item-success">Enlace 2</a>
+          <a href="#" class="list-group-item list-group-item-action list-group-item-warning">Enlace 3</a>
+          <a href="#" class="list-group-item list-group-item-action list-group-item-danger">Enlace 4</a>
+          <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Enlace 5</a>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="mb-3">
+
+    <div class="row mt-3">
+
+      <div class="col">
+        <h5>Badges</h5>
+        <ul class="list-group">
+
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Artículo base
+            <span class="badge bg-primary">5</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Artículo 1
+            <span class="badge bg-info">2</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Artículo 2
+            <span class="badge bg-primary">15</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Artículo 3
+            <span class="badge bg-info">8</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Artículo 4
+            <span class="badge bg-primary">5</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <h5>Checkboxs</h5>
+        <ul class="list-group">
+          <label class="list-group-item">
+            <input type="checkbox" class="form-check-input me-1">
+            Checkbox 1
+          </label>
+          <label class="list-group-item">
+            <input type="checkbox" class="form-check-input me-1">
+            Checkbox 2
+          </label>
+          <label class="list-group-item">
+            <input type="checkbox" class="form-check-input me-1">
+            Checkbox 3
+          </label>
+          <label class="list-group-item">
+            <input type="checkbox" class="form-check-input me-1">
+            Checkbox 4
+          </label>
+          <label class="list-group-item">
+            <input type="checkbox" class="form-check-input me-1">
+            Checkbox 5
+          </label>
+        </ul>
+
+      </div>
+
+    </div>
+
+
+    <hr class="mb-3">
+
+    <div class="col-8">
+      <h5>listas Avanzadas</h5>
+      <ul class="list-group">
+        <a href="#" class="list-group-item list-group-item-action list-group-item-dark">
+          <div>
+            <div class="d-flex justify-content-between">
+              <h5>Notificación</h5>
+              <small>Hace 2 horas</small>
+            </div>
+            <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet.</p>
+            <small class="text-secondary">ver mas</small>
+          </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action list-group-item-primary">
+          <div>
+            <div class="d-flex justify-content-between">
+              <h5>Notificación</h5>
+              <small>Hace 4 horas</small>
+            </div>
+            <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet.</p>
+            <small class="text-secondary">ver mas</small>
+          </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action list-group-item-dark">
+          <div>
+            <div class="d-flex justify-content-between">
+              <h5>Notificación</h5>
+              <small>Hace 2 días</small>
+            </div>
+            <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet.</p>
+            <small class="text-secondary">ver mas</small>
+          </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action list-group-item-primary">
+          <div>
+            <div class="d-flex justify-content-between">
+              <h5>Notificación</h5>
+              <small>Hace 5 min</small>
+            </div>
+            <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet.</p>
+            <small class="text-secondary">ver mas</small>
+          </div>
+        </a>
+      </ul>
+
+
+
+    </div>
+  </div>
+
+  <br><br><br><br><br><br><br>
+
+
+  <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
