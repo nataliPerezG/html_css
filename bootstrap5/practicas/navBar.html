@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <title>Nav Bar</title>
+</head>
+
+
+<!-- Altura para hacer scroll, padding para que el nav
+no cubra el título -->
+
+<body style="height: 300dvh; padding-top: 60px;">
+
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+
+    <!-- la clase container-fluid extendería el menu
+    a todo el ancho-->
+    <div class="container">
+
+      <!-- Enlace para el logo -->
+      <a class="navbar-brand" href="#">Logo</a>
+
+
+      <!-- Botón para expandir y contraer el menú en móviles -->
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menú de navegación -->
+      <div class="navbar-collapse collapse" id="menu">
+        <ul class="navbar-nav mb-md-0 me-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Contact</a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="#">Ítem 1</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Ítem 2</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Ítem 3</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Ítem 4</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="#">More Info</a></li>
+        </ul>
+
+        <!-- barra de búsqueda -->
+        <form class="d-flex col-md-4">
+          <input class="form-control me-2" type="search" placeholder="Buscar">
+          <button class="btn btn-outline-light">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>Hola Mundo</h1>
+
+  </div>
+
+  <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
