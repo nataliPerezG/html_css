@@ -1,0 +1,216 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: "Lexend Tera", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background-color: rgb(216, 221, 228);
+}
+
+header {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 10px 2px rgba(128, 0, 128, 0.425);
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  margin: 0 auto;
+}
+
+header img {
+  width: 200px;
+  height: 120px;
+  margin: auto 10px;
+  object-fit: contain;
+}
+
+.nav {
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+}
+
+li a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  color: purple;
+  font-size: 1.2rem;
+  padding: 10px 5px;
+}
+
+a:hover {
+  color: blueviolet;
+  text-decoration: underline;
+}
+
+
+
+main {
+  width: 90%;
+  max-width: 1000px;
+  margin: 200px auto 20px auto;
+  display: flex;
+  align-items: start;
+  gap: 20px;
+}
+
+section {
+  width: 70%;
+}
+
+.container-img img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+article {
+  width: 85%;
+  margin: 20px;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: purple;
+  margin: 20px auto;
+  font-weight: 800;
+  font-size: 1.4rem;
+}
+
+p {
+  line-height: 30px;
+  color: #555;
+}
+
+aside {
+  box-shadow: 3px 3px 20px 10px #ccc;
+  border-radius: 5px;
+  padding: 60px 5px;
+  width: 25%;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  position: sticky;
+  top: 180px;
+}
+
+.add {
+  width: 80%;
+  height: 150px;
+  border: 2px solid gainsboro;
+  background-color: blueviolet;
+}
+
+footer {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px 10px;
+  background-color: rgb(54, 5, 54);
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.redes {
+  display: flex;
+  justify-content: space-around;
+  background-color: inherit;
+}
+
+.redes a {
+  padding: 5px;
+  background-color: inherit;
+  color: gainsboro;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.redes a:hover {
+  text-decoration: underline;
+}
+
+.copy p {
+  background-color: rgb(54, 5, 54);
+}
+
+.copy p>small {
+  padding: 10px;
+  background-color: rgb(54, 5, 54);
+}
+
+@media screen and (max-width:700px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav {
+    width: 100%;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  section,
+  aside {
+    width: 100%;
+    padding: 30px;
+  }
+
+  footer {
+    width: 80%;
+    margin: 10px auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  footer a {
+    font-size: .8rem;
+  }
+
+}
+
+@media screen and (max-width:500px) {
+  .logo {
+    display: none
+  }
+
+  .nav ul {
+    flex-direction: column;
+  }
+
+  aside {
+    display: none
+  }
+
+  footer .redes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
