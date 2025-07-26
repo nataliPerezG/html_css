@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+body {
+  height: 100dvh;
+  background-color: rgb(48, 48, 78);
+}
+
+h1 {
+  margin: 20px auto;
+  text-align: center;
+  color: gainsboro;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+main {
+  margin: 50px auto;
+  width: 80%;
+  max-width: 750px;
+  min-height: 90%;
+  background-color: rgb(48, 48, 48);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-rows: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  align-content: space-around;
+  grid-gap: 30px;
+  padding: 10px;
+
+}
+
+.fig {
+  width: 160px;
+  height: 160px;
+  background-color: rgb(163, 164, 245);
+}
+
+.circulo {
+  border-radius: 50%;
+}
+
+.triangulo {
+  width: 200px;
+  height: 150px;
+  background-color: transparent;
+  border-top: 20px solid transparent;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 100px solid rgb(163, 164, 245);
+}
+
+.rectangulo {
+  width: 180px;
+  height: 120px;
+}
+
+.rombo {
+  width: 100px;
+  height: 100px;
+  transform: rotate(55deg) skew(22deg);
+}
+
+.paralelogramo {
+  width: 150px;
+  height: 50px;
+  background-color: transparent;
+  border-top: 20px solid transparent;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 100px solid rgb(163, 164, 245);
+}
+
+.ovalo {
+  width: 180px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.medio-circulo {
+  width: 150px;
+  height: 80px;
+  border-radius: 100px 100px 0 0;
+}
+
+.hoja {
+  width: 180px;
+  height: 100px;
+  border-top-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
