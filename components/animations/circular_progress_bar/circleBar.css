@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #aaa;
+}
+
+.cont {
+  width: 150px;
+  height: 200px;
+  margin: 40px auto;
+  position: relative;
+}
+
+.loader {
+  width: 150px;
+  height: 150px;
+  border: 8px solid rgb(118, 118, 156);
+  border-top-color: rgba(0, 0, 255, 0.644);
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  animation: girar .8s linear infinite;
+}
+
+p {
+  position: relative;
+  top: -85px;
+  left: 35px;
+  z-index: 10;
+  color: rgba(0, 0, 255, 0.644);
+  font-weight: 500;
+  font-size: 1.2rem;
+  animation: text 1.2s linear infinite alternate;
+}
+
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg)
+  }
+}
+
+@keyframes text {
+  from {
+    color: rgba(0, 0, 255, 0.8);
+  }
+
+  to {
+    color: rgba(0, 0, 255, 0.3);
+  }
+}
